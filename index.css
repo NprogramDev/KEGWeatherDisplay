@@ -1,0 +1,209 @@
+@keyframes bgImgIn {
+    0% {
+        right: -100vw;
+    }
+    100% {
+        right: 0;
+    }
+}
+@keyframes bgImgOut {
+    0% {
+        right: 0;
+    }
+    100% {
+        right: 100vw;
+    }
+}
+html,
+body {
+    font-family: Arial;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: black;
+}
+
+#bg-protector {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    display: flex;
+    justify-content: baseline;
+}
+
+#bg-container {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+    z-index: 0;
+}
+#bg-img,
+#bg-img2 {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    animation-duration: 2s;
+}
+
+main {
+    /*margin-top: 1em;*/
+    height: 100%;
+    width: 100vw;
+
+    position: absolute;
+    /*top: 50px;
+    left: -5%;*/
+    z-index: 2;
+    display: flex;
+    flex-flow: row;
+    flex-wrap: wrap;
+    font-family: Consolas, monospace;
+    color: turquoise;
+    /*  transform: scale(0.9);*/
+}
+
+h2 {
+    font-size: 2em;
+}
+
+.glass-pane-tp {
+    /*          border-radius: 1em;
+    background-color: rgba(0, 0, 0, 0.65);
+    margin: 4%;
+    padding-inline: 10%;
+    padding-bottom: 10%;
+    backdrop-filter: blur(3px);
+    width: 35vh;
+    height: fit-content;
+*/
+    border-radius: 1em;
+    background-color: rgba(0, 0, 0, 0.65);
+    margin: 0;
+    margin-bottom: 1%;
+    margin-bottom: 1%;
+    padding-inline: 2%;
+    padding-block: 0;
+    backdrop-filter: blur(6px);
+    display: flex;
+    /*width: 21%;*/
+    /*height: fit-content;*/
+    flex: 1 1 0px;
+    flex-direction: column;
+}
+
+#glasTemp {
+}
+
+#glassTemp-heading {
+    /*font-size: 3em;
+    font-weight: bold;
+    text-align: center;*/
+}
+
+#glassTempNHead {
+    display: flex;
+    flex: 1 1 0px;
+}
+
+#glassTemp-value {
+    font-size: 6em;
+    font-weight: bold;
+    text-align: center;
+    margin-right: 0.5em;
+}
+
+#glassTemp-left {
+    width: 50%;
+
+    float: left;
+}
+
+#glassTemp-right {
+    width: 50%;
+
+    float: right;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+#glassTemp-ThermContainer {
+    width: fit-content;
+    height: fit-content;
+    border-style: solid;
+}
+
+#glassTemp-Thermometer {
+    fill: turquoise;
+    border-style: solid;
+    float: right;
+    margin-left: 6vw;
+    height: fit-content;
+}
+
+#glassTemp-time {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5em;
+}
+
+.glass-pane {
+    border-radius: 1em;
+    background-color: rgba(0, 0, 0, 0.65);
+    margin: 0;
+    margin-bottom: 1%;
+    margin-bottom: 1%;
+    padding-inline: 2%;
+    padding-block: 0;
+    backdrop-filter: blur(6px);
+    /*width: 21%;*/
+    /*height: fit-content;*/
+    /*flex: 1 1 0px;*/
+    aspect-ratio: 1/1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#panel-left {
+    display: flex;
+    /*width: 22vw;*/
+    padding: 20px;
+    padding-right: 0;
+}
+
+#panel-right {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+    flex: 1 1 0px;
+}
+#creatorLogo {
+    width: 3%;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 1em;
+    left: 1em;
+    z-index: 4;
+}
+.roundMeter {
+    width: 16em;
+}
+.roundMiddleMeter {
+}

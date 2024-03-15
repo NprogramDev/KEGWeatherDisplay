@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+    <link rel="stylesheet" href="./index.css"/>
+</head>
+
+<body>
+    <main >
+        <div id="panel-left">
+            <div class="glass-pane-tp" id="glasTemp">
+                
+                <h2 id="glassTemp-heading">
+                    Temperatur
+                </h2>
+                <div id="glassTempNHead">
+                    <div id="glassTemp-left">
+                    
+                        <div id="glassTemp-value">
+                            <span id="temp">0</span>°C
+                        </div>
+                        <div id="glassTemp-time">
+    
+                        </div>
+                    </div>
+                    <div id="glassTemp-right">
+                            <svg id="glassTemp-Thermometer" viewbox="0 0 50 500">
+                                <g id="glassTemp-ThermInsert">
+    
+                                </g>
+                                <rect width="100" height="1" x="0" y="310" />
+                            </svg>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="panel-right">
+        
+            
+        
+        
+            <div class="glass-pane">
+                <h2 id="${id}-title" style="margin-bottom: 0.65em;">Windrichtung</h2>
+                <svg viewbox="0 0 100 100" class="roundMeter" id="winddir-svg">
+                    <circle cx="50" cy="50" r="45" fill="none" stroke="turquoise" stroke-width="1" id="winddir-rad" />
+                    <text style="font-size: 1em" x="54" y="54" text-anchor="middle" alignment-baseline="middle"
+                        font-size="1.5em" fill="turquoise" id="winddir-text">300°</text>
+                    <path id="winddir-arrow" stroke="turquoise" fill="turquoise" d="M50 30 L57 0 L43 0 Z"
+                        style="transform-origin: center;transform: rotate(270deg);"></path>
+                </svg>
+            </div>
+        
+        </div>
+    </main>
+    <img id="creatorLogo" src="PaddeProgramTrace.png"/>
+    <div id="bg-protector" class="bg-stat"></div>
+    <div id="bg-container" class="bg-stat"><img id="bg-img" src="bg-img.jpg"><img id="bg-img2" src="bg-img.jpg" /> </div>
+    <script src="index.js">
+    </script>
+</body>
+
+</html>
